@@ -1,6 +1,16 @@
 .design {
-display: grid;
-grid-template-columns: repeat(4, 1fr); /* tạo 3 cột có chiều rộng bằng nhau */
-grid-template-rows: repeat(2, auto); /* tạo 2 hàng có chiều cao tự động */
-grid-gap: 5px; /* tạo khoảng cách giữa các ô trong grid */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* tạo 3 cột có chiều rộng bằng nhau */
+    grid-template-rows: repeat(2, auto);
+    /* tạo 2 hàng có chiều cao tự động */
+    grid-gap: 10px;
+    /* tạo khoảng cách giữa các ô trong grid */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.inlinediv {
+    display: grid;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #3399CC;
 }
