@@ -1,1 +1,6 @@
-
+.design {
+display: grid;
+grid-template-columns: repeat(4, 1fr); /* tạo 3 cột có chiều rộng bằng nhau */
+grid-template-rows: repeat(2, auto); /* tạo 2 hàng có chiều cao tự động */
+grid-gap: 5px; /* tạo khoảng cách giữa các ô trong grid */
+}
