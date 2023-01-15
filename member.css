@@ -7,7 +7,7 @@
 }
 
 .my-class {
-    background-image: url('image/bg9.jpg') ;
+    background-image: url('image/bg9.jpg');
     background-size: cover;
 }
 
@@ -16,14 +16,14 @@
 }
 
 .row {
-    display:grid;
+    display: grid;
     grid-template-columns: 25% 75%;
 }
 
-.input-infor{
+.input-infor {
     background: rgba(255, 249, 249, 0.7);
     width: 30%;
-    height:fit-content;
+    height: fit-content;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 30px;
@@ -35,10 +35,12 @@
 .note {
     font-size: 50px;
     font-family: cursive;
-    color: #c9264f ;
+    color: #c9264f;
 }
+
 .input-infor h2 {
     margin-bottom: 20px;
+    font-family: cursive;
 }
 
 .form-group {
@@ -66,11 +68,10 @@
 
 .submit:hover {
     cursor: pointer;
-    background-color: #3b041e;
+    background-color: #85a4e8;
     color: #fff;
     transform: scale(1.1);
     transition: 1s;
-    
 }
 
 .output-infor {
@@ -78,7 +79,7 @@
     background: rgba(255, 249, 249, 0.7);
     padding: 50px;
     border: 1px solid #ccc;
-    border-radius:30px;
+    border-radius: 30px;
     box-shadow: 10px 10px 30px #ccc;
     animation: drop-shadow 5s ease-in-out infinite;
 }
@@ -93,29 +94,29 @@ table tr {
     color: grey;
 }
 
-tr td:first-child { 
-    border-top-left-radius: 20px; 
+tr td:first-child {
+    border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     text-align: center;
 }
 
-tr td:last-child { 
+tr td:last-child {
     text-align: center;
     border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px; 
+    border-bottom-right-radius: 20px;
 }
 
 #tbInfor tr:hover {
     background-color: #c9264f;
-    color:white;
+    color: white;
 }
 
 .table th {
     text-align: center;
-    color:white;
+    color: white;
     text-shadow: 2px 2px 12px white;
     border-radius: 30px;
-    background-color:#c9264f;
+    background-color: #c9264f;
     box-shadow: 5px 5px 15px rgb(225, 178, 178);
     animation: drop-shadow 5s ease-in-out infinite;
 }
@@ -125,6 +126,8 @@ tr td:last-child {
 }
 
 .edit {
+    width: 50px;
+    height: 25px;
     cursor: pointer;
     color: white;
     border: none;
@@ -132,4 +135,10 @@ tr td:last-child {
     background-color: #85a4e8;
 }
 
-
+.edit:hover {
+    cursor: pointer;
+    background-color: #c9264f;
+    color: #fff;
+    transform: scale(1.1);
+    transition: 1s;
+}
