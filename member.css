@@ -21,6 +21,7 @@
 }
 
 .input-infor{
+    background: rgba(255, 249, 249, 0.7);
     width: 30%;
     height:fit-content;
     padding: 20px;
@@ -28,7 +29,6 @@
     border-radius: 30px;
     box-shadow: 10px 10px 30px #ccc;
     animation: drop-shadow 5s ease-in-out infinite;
-    background-color: white;
     color: #c9264f;
 }
 
@@ -46,6 +46,7 @@
 }
 
 .form-control {
+    background: rgba(255, 249, 249, 0.7);
     width: 300px;
     padding: 10px;
     border-radius: 30px;
@@ -73,7 +74,8 @@
 }
 
 .output-infor {
-    background: white;
+    /* chỉnh độ mờ của màu thì đổi màu sang rgba*/
+    background: rgba(255, 249, 249, 0.7);
     padding: 50px;
     border: 1px solid #ccc;
     border-radius:30px;
@@ -83,11 +85,24 @@
 
 table {
     width: 100%;
+    border-collapse: collapse;
 }
 
-.table th, .table td {
-    padding: 10px;
+table tr {
+    padding: 20px;
     color: grey;
+}
+
+tr td:first-child { 
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px;
+    text-align: center;
+}
+
+tr td:last-child { 
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px; 
 }
 
 #tbInfor tr:hover {
@@ -109,10 +124,12 @@ table {
     margin-top: 20px;
 }
 
-.move a {
-    color: #007bff;
-    text-decoration: none;
-    margin-right: 10px;
+.edit {
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    background-color: #85a4e8;
 }
 
 

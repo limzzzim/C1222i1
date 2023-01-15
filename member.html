@@ -45,7 +45,9 @@
                     <div class="form-group">
                         <!--kiểu "form-control" và "btn btn-primary submit", 
                             chỉ định cho nút này các thuộc tính tương ứng với các class đó.-->
-                        <button onclick="addInfo()" class="form-control btn btn-primary submit">Create</button>
+                        <button id="btnAdd" type="button" onclick="addInfo()" class="form-control btn btn-primary submit">Create</button>
+                        <button id="btnUpdate" style="display: none;" type="button" onclick="updateInfo()" class="form-control btn btn-primary submit">Update</button>
+                        <button id="btnCancel" style="display: none;" type="button" onclick="cancelInfo()" class="form-control btn btn-primary submit">Cancel</button>
                     </div>
                 </form>
             </div>
@@ -67,7 +69,6 @@
                         </tr>
                     </thead>
                     <tbody id="tbInfor">
-                        <div class="move">
                             <tr class="form-control btn btn-primary submit">
                                 <th>1</th>
                                 <td>Kenny</td>
@@ -75,10 +76,9 @@
                                 <td>Covert</td>
                                 <td>Dealer Principal</td>
                                 <td>Management</td>
-                                <td>kenny@covert.com</td>
-                                <td><a href="">edit</a> / <a href="">delete</a></td>
+                                <td>Ofice</td>
+                                <td><button>edit</button> / <button>delete</button></td>
                             </tr>
-                        </div>
                     </tbody>
                 </table>
             </div>
