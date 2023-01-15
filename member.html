@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Manager</title>
+    <link rel="icon" href="image/symbol.png">
+    <link rel="stylesheet" href="member.css">
+</head>
+
+<body class="my-class">
+    <div class="container">
+        <div class="row">
+            <div class="input-infor">
+                <h2>Add New Member</h2><br>
+                <form action="" class="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="date" class="form-control" placeholder="D.O.B" id="dob">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Phone Number" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="date" class="form-control" placeholder="Onboard On" id="onboard">
+                    </div>
+                    <div class="form-group">
+                        <select name="department" id="team" class="form-control">
+                            <option value="null" selected disabled>Select Team</option>
+                            <option value="be">Back End</option>
+                            <option value="fe">Front End</option>
+                            <option value="qa">Quality Asurance</option>
+                            <option value="brse">Bridge Engineer</option>
+                            <option value="unity">Unity</option>
+                            <option value="office">Office</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <!--kiểu "form-control" và "btn btn-primary submit", 
+                            chỉ định cho nút này các thuộc tính tương ứng với các class đó.-->
+                        <button onclick="addInfo()" class="form-control btn btn-primary submit">Create</button>
+                    </div>
+                </form>
+            </div>
+            <div class="output-infor">
+                <h2 class="note">Staff Manager</h2><br>
+                <table class="table table-bordered table-hover" >
+                    <thead>
+                        <tr>
+                            <!-- "scope" trong thẻ "th" xác định vị trí của ô trong bảng, có thể là "col" hoặc "row". 
+                            Khi thiết lập "scope" là "col", nó xác định rằng ô đó là tiêu đề cột trong bảng. Khi thiết lập "scope" là "row", nó xác định rằng ô đó là tiêu đề hàng trong bảng.-->
+                            <th scope="col">No.</th> 
+                            <th scope="col">Name</th>
+                            <th scope="col">D.O.B</th>
+                            <th scope="col">Phone Number</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Onboard On</th>
+                            <th scope="col">Team</th>
+                            <th scope="col">Tools</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbInfor">
+                        <div class="move">
+                            <tr class="form-control btn btn-primary submit">
+                                <th>1</th>
+                                <td>Kenny</td>
+                                <td>Covert</td>
+                                <td>Covert</td>
+                                <td>Dealer Principal</td>
+                                <td>Management</td>
+                                <td>kenny@covert.com</td>
+                                <td><a href="">edit</a> / <a href="">delete</a></td>
+                            </tr>
+                        </div>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="member.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+* {
+    padding: 5px;
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.my-class {
+    background-image: url('image/bg9.jpg') ;
+    background-size: cover;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.row {
+    display:grid;
+    grid-template-columns: 25% 75%;
+}
+
+.input-infor{
+    width: 30%;
+    height:fit-content;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px #ccc;
+    animation: drop-shadow 5s ease-in-out infinite;
+    background-color: white;
+    color: #c9264f;
+}
+
+.note {
+    font-size: 50px;
+    font-family: cursive;
+    color: #c9264f ;
+}
+.input-infor h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 2px;
+}
+
+.form-control {
+    width: 300px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+}
+
+.submit {
+    background-color: #c9264f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-shadow: 2px 2px 12px white;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: #3b041e;
+    color: #fff;
+    transform: scale(1.1);
+    transition: 1s;
+    
+}
+
+.output-infor {
+    background: white;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius:30px;
+    box-shadow: 10px 10px 30px #ccc;
+    animation: drop-shadow 5s ease-in-out infinite;
+}
+
+table {
+    width: 100%;
+}
+
+.table th, .table td {
+    padding: 10px;
+    color: grey;
+}
+
+#tbInfor tr:hover {
+    background-color: #c9264f;
+    color:white;
+}
+
+.table th {
+    text-align: center;
+    color:white;
+    text-shadow: 2px 2px 12px white;
+    border-radius: 30px;
+    background-color:#c9264f;
+    box-shadow: 5px 5px 15px rgb(225, 178, 178);
+    animation: drop-shadow 5s ease-in-out infinite;
+}
+
+.move {
+    margin-top: 20px;
+}
+
+.move a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
