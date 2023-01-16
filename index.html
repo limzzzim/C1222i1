@@ -16,7 +16,7 @@
         <div class="row">
             <div class="input-infor">
                 <h2>Add New Member</h2><br>
-                <form action="" class="">
+                <form>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Name" id="name">
                     </div>
@@ -24,7 +24,10 @@
                         <input type="date" class="form-control" placeholder="D.O.B" id="dob">
                     </div>
                     <div class="form-group">
-                        <input type="number" class="form-control" placeholder="Phone Number" id="phone">
+                        <!--pattern=[0-9]{10} chỉ cho phép nhập số từ 0-9, 
+                            với độ dài là 10 ký tự.-->
+                        <input type="tel" pattern="[0-9]{10}" class="form-control" placeholder="Phone Number"
+                            id="phone">
                     </div>
                     <div class="form-group">
                         <input type="email" class="form-control" placeholder="Email" id="email">
@@ -46,20 +49,23 @@
                     <div class="form-group">
                         <!--kiểu "form-control" và "btn btn-primary submit", 
                             chỉ định cho nút này các thuộc tính tương ứng với các class đó.-->
-                        <button id="btnAdd" type="button" onclick="addInfo()" class="form-control btn btn-primary submit">Create</button>
-                        <button id="btnUpdate" style="display: none;" type="button" onclick="updateInfo()" class="form-control btn btn-primary submit">Update</button>
-                        <button id="btnCancel" style="display: none;" type="button" onclick="cancelInfo()" class="form-control btn btn-primary submit">Cancel</button>
+                        <button id="btnAdd" type="button" onclick="addInfo()"
+                            class="form-control btn btn-primary submit">Create</button>
+                        <button id="btnUpdate" style="display: none;" type="button" onclick="updateInfo()"
+                            class="form-control btn btn-primary submit">Update</button>
+                        <button id="btnCancel" style="display: none;" type="button" onclick="cancelInfo()"
+                            class="form-control btn btn-primary submit">Cancel</button>
                     </div>
                 </form>
             </div>
             <div class="output-infor">
                 <h2 class="note">Staff Manager</h2><br>
-                <table class="table table-bordered table-hover" >
+                <table class="table table-bordered table-hover">
                     <thead>
                         <tr>
                             <!-- "scope" trong thẻ "th" xác định vị trí của ô trong bảng, có thể là "col" hoặc "row". 
                             Khi thiết lập "scope" là "col", nó xác định rằng ô đó là tiêu đề cột trong bảng. Khi thiết lập "scope" là "row", nó xác định rằng ô đó là tiêu đề hàng trong bảng.-->
-                            <th scope="col">No.</th> 
+                            <th scope="col">No.</th>
                             <th scope="col">Name</th>
                             <th scope="col">D.O.B</th>
                             <th scope="col">Phone Number</th>
@@ -70,16 +76,16 @@
                         </tr>
                     </thead>
                     <tbody id="tbInfor">
-                            <tr class="form-control btn btn-primary submit">
-                                <th>1</th>
-                                <td>Kenny</td>
-                                <td>Covert</td>
-                                <td>Covert</td>
-                                <td>Dealer Principal</td>
-                                <td>Management</td>
-                                <td>Ofice</td>
-                                <td><button>edit</button> / <button>delete</button></td>
-                            </tr>
+                        <tr class="form-control btn btn-primary submit">
+                            <th>1</th>
+                            <td>Kenny</td>
+                            <td>Covert</td>
+                            <td>Covert</td>
+                            <td>Dealer Principal</td>
+                            <td>Management</td>
+                            <td>Ofice</td>
+                            <td><button>edit</button> / <button>delete</button></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

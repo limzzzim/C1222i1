@@ -21,7 +21,7 @@
 
 .input-infor {
     background: rgba(255, 249, 249, 0.7);
-    width: 30%;
+    width: 20%;
     height: fit-content;
     padding: 20px;
     border: 1px solid #ccc;
@@ -44,14 +44,24 @@
 
 .form-group {
     margin-bottom: 2px;
+
 }
 
 .form-control {
     background: rgba(255, 249, 249, 0.7);
-    width: 300px;
+    width: 270px;
     padding: 10px;
     border-radius: 30px;
     border: 1px solid #ccc;
+}
+
+.form-control:hover {
+    cursor: pointer;
+    background-color: #85a4e8;
+    color: rgb(254, 253, 253);
+    transform: scale(1.1);
+    transition: 0.5s;
+    border: none;
 }
 
 .submit {
