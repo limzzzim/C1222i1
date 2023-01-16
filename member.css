@@ -6,7 +6,7 @@
 }
 
 .my-class {
-    background-image: src('/Image/bg9.jpg');
+    background-image: url('./Image/bg9.jpg');
     background-size: cover;
 }
 
