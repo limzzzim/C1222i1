@@ -3,12 +3,6 @@
     margin: 0px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 12px;
-    box-sizing: border-box;
-<<<<<<< HEAD
-=======
-    background-image: url('/Image/bg9.jpg');
-    background-size: cover;
->>>>>>> bb8b22ee4ff0de86138b7f1fa5a2841a27ed81fe
 }
 
 .my-class {
