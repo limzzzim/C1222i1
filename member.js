@@ -13,6 +13,14 @@ class Info {
 let infors = [];
 
 const info_data = "info_data";
+/*Biến info_data là một hằng số (const) được sử dụng để lưu trữ key của
+dữ liệu trong localStorage. Đây là một chuỗi để xác định vị trí của
+dữ liệu đang lưu trữ trong localStorage.
+Khi sử dụng localStorage, dữ liệu được lưu trữ dưới dạng key-value. 
+Với key là một chuỗi và value là giá trị cần lưu trữ (có thể là một chuỗi, số, boolean hoặc một đối tượng JSON). 
+ở đây, info_data là key để lưu trữ danh sách nhân viên.
+Hàm localStorage.getItem(key) sẽ trả về giá trị lưu trữ tại key đó, 
+và hàm localStorage.setItem(key, value) sẽ lưu trữ giá trị value tại key đó.*/
 function init() {
     if (localStorage.getItem(info_data) == null) {
         infors = [
@@ -145,7 +153,6 @@ function handleEditClick(inforId) {
 
     inforIdUpdate = inforId;
     let info = findInfoById(inforId);
-    console.log(info);
     document.getElementById('name').value = info.name;
     document.getElementById('dob').value = info.dob;
     document.getElementById('phone').value = info.phone;

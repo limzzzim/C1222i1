@@ -29,6 +29,7 @@
     box-shadow: 10px 10px 30px #ccc;
     animation: drop-shadow 5s ease-in-out infinite;
     color: #c9264f;
+    border:none;
 }
 
 .note {
@@ -44,7 +45,6 @@
 
 .form-group {
     margin-bottom: 2px;
-
 }
 
 .form-control {
@@ -52,7 +52,8 @@
     width: 270px;
     padding: 10px;
     border-radius: 30px;
-    border: 1px solid #ccc;
+    border: 0.5px solid #ccc;
+    
 }
 
 .form-control:hover {
@@ -91,6 +92,7 @@
     border-radius: 30px;
     box-shadow: 10px 10px 30px #ccc;
     animation: drop-shadow 5s ease-in-out infinite;
+    border:none;
 }
 
 table {
